@@ -1,0 +1,20 @@
+酷狗音乐转换器：生成 Windows EXE 的说明
+
+方法 A（在自己的 Windows 11 电脑构建）
+1. 安装 Python 3.11 或更新版本，安装时勾选 Add python.exe to PATH。
+2. 解压整个项目文件夹。
+3. 双击 build.bat，等待构建完成。
+4. 程序位置：dist\KugouToMP3\KugouToMP3.exe
+5. 便携 ZIP：dist\KugouToMP3_Portable_Windows.zip
+6. 分发时复制整个 KugouToMP3 文件夹或使用 ZIP，不要只复制 EXE。
+
+方法 B（使用 GitHub Actions 的 Windows 构建机）
+1. 把整个项目上传到自己的 GitHub 仓库（仓库根目录应直接包含 src、build.bat 和本文件）。
+2. 打开仓库的 Actions 标签页。
+3. 选择 Build Windows portable EXE 工作流，点击 Run workflow。
+4. 成功后打开该次运行页面，在 Artifacts 区域下载 KugouToMP3-Windows-Portable。
+
+重要：当前项目尚不包含 FFmpeg 二进制文件。要转换普通音频，请把经过许可核查的 ffmpeg.exe 放到 ffmpeg\bin\ffmpeg.exe 后再构建，或确保目标电脑已安装 FFmpeg 并加入 PATH。
+KGM/KGMA/KGG 在当前版本中不支持解码。生成 EXE 不代表已实现这些专有格式转换。
+
+构建前后请自行用合法拥有的 WAV/FLAC 等测试文件测试；Windows SmartScreen 对未签名程序可能显示警告。

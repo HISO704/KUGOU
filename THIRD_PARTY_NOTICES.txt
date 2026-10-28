@@ -1,0 +1,20 @@
+THIRD-PARTY SOFTWARE NOTICES
+============================
+
+This application can invoke FFmpeg to process audio.
+
+IMPORTANT:
+This file is a template. Before redistributing an FFmpeg binary, replace this section with accurate details for the exact binary included:
+- FFmpeg version/build identifier:
+- Download/source URL:
+- SHA-256 checksum:
+- Build configuration:
+- Applicable license(s):
+- Location of the corresponding source code or source offer, as required:
+- Third-party libraries included in that FFmpeg build and their licenses:
+
+FFmpeg licensing depends on the exact build configuration and enabled external libraries.
+See the official FFmpeg legal page:
+https://www.ffmpeg.org/legal.html
+
+Do not distribute this template unchanged as proof of compliance.
